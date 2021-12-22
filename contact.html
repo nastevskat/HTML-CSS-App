@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf -8">
+        <title> Welcome!</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "icon" href ="favicon.ico" type = "image/x-icon">
+    </head>
+    <body>
+        <div class = >
+        <p class="header"><a class = "he" href="proektna.html">Tamara Nastevska</a></p>
+        <button class = "new" onclick="myFunction()" ><span id = "myId"><i class="fa fa-moon-o "></i></span></button>
+        <button class = "neww" onclick="myFunction()"><span id = "myId"><i class="fa fa-sun-o "></i></span></button>
+        <hr class="Rule"> 
+
+                    <script>
+                            function myFunction() {
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                            }
+                         
+                                                    
+                    </script>
+        </div>
+        
+      
+        <div class = "menu">
+            <ul>
+            <li><a href = "proektna.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT ME</a></li>
+            <li><a href = "gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">FORUM</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        <hr class="Rule"> 
+
+        <div class ="kontakt"><form method ="post" action="mailto:nastevskat@yahoo.com">
+            <h1 class="cont">CONTACT</h1>
+            <br>
+            <h3 class="contact">Contact Me</3>
+            
+            <p><h4>Fields marked with <span class = "zvez">*</span> are required</h4>
+            <h2>NAME  <span class = "zvez">*</span></h2>
+            <form id = "form" onsubmit = "return(login())">
+            <input style="height: 50px; width: 650px; font-size: 15px; border-width: 2px; border-style:ridge;"type="text" placeholder="Enter your name" name="ime" required >
+            <br><h2>SURNAME <span class = "zvez">*</span></h2>
+            <form id = "form" onsubmit = "return(login())">
+            <input style="height: 50px; width: 650px; font-size: 15px;border-width: 2px; border-style:ridge;"type="text" placeholder="Enter your surname" name="prezime" required >
+                <h2>RATE MY PAGE <span class = "zvez">*</span></h2>
+                <select id="messa" style="height: 50px; width: 650px; font-size: 15px;border-width: 2px; border-style:ridge;" required>
+                    <option value="sat">Satisfied</option>
+                    <option value="okay">Okay</option>
+                    <option value="bet">Could be better</option>
+                    <option value="nope">You need to improve</option>
+                </select><br>
+
+            <br><h2>MESSAGE <span class = "zvez">*</span></h2>
+                <input style="height: 150px; width: 650px; font-size: 15px;border-width: 2px; border-style:ridge;"type="text" placeholder="Write me a message :)" name="poraka" required >
+            <br><br>
+            <input class="contac" type="submit" value="Submit" /> 
+            </form>
+
+        </div>
+        <div class="searc">
+            <form action="/action_page.php">
+              <input style="height:40px; width:250px;" type="text" placeholder="Search.." name="search">
+              <button class="contac" type="submit">Search</button>
+            </form>
+          </div>
+     
+        <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com" >
+            <div style="background-color: wheat;" class ="sig">
+              <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+              <p class="snask">Sign up with your email adress to receive news and updates</p>
+              <div class = "ssnask">
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                <br><br></div>
+              <input class = "contac" type="submit" value="Subscribe">
+            </div>
+          </form>
+          <div id="about" class="right ">
+              <br>
+            <p style ="font-family: masqualero; font-size: 20px;">|| ABOUT ME ||</p>
+            <img src ="jas.jpg"style="border-radius: 50%; width:200px"><br><b style="font-family: masqualero; font-size: 20px;">Tamara Nastevska</b>
+            <p>Hi,I'm Tamara and this is my blog. I hope to show you a little part of my life.</p>
+            <br>
+            <a href="https://www.facebook.com/tamara.nastevska/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nastevskat/" class="fa fa-instagram"></a>
+            <a href="mailto:nastevskat@yahoo.com" class="fa fa-yahoo"></a>
+
+        </div> 
+
+
+
+</body>

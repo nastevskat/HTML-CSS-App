@@ -6,30 +6,175 @@
         <title> Welcome!</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "icon" href ="favicon.ico" type = "image/x-icon">
+        <style>
+            .blackout{background: dimgrey;
+                opacity: 0.3;
+            }
+            .ui-dialog
+            {
+                opacity:1;
+            }
+            .ui-dialog.ui-widget.ui-widget-content {
+                background:wheat;
+                opacity:1;
+            }
+
+            .ui-widget-overlay.ui-front {
+                opacity:0.75;
+            }
+            .nova{
+                float:right;
+                display:block;
+                text-align: center;
+                margin-top: 10px;
+                box-sizing: border-box;
+
+            }
+        </style>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script>$(document).ready( function() {
+            $( "#dialog" ).dialog(
+                {
+                    modal:true,
+                    height:660,
+                    width:500,
+                    resizable: false,
+                    show: {
+                        effect: "fade",
+                        duration: 1000
+                    },
+                    hide: {
+                        effect: "fade",
+                        duration: 500
+                    },
+                    open: function () {
+                        var e = document.body.children;
+                        for(var i=0;i<e.length;i++)
+                        {
+                            e[i].classList.add("blackout");
+                        }
+                        console.log("raboti");
+                        callf();
+                        document.body.style.background="dimgrey";
+                    },
+                    close:function()
+                    {
+                        var e = document.body.children;
+                        for(var i=0;i<e.length;i++)
+                        {
+                            e[i].classList.remove("blackout");
+                        }
+
+                        document.body.style.background="rgb(240, 235, 235)";
+
+                    }
+                }
+            );
+        } );
+        function callf()
+        {
+            document.getElementById("dialog").classList.add("dialogg");
+        }
+        </script>
+        <script>
+            window.onload=function(){
+                
+                    var dark=new URLSearchParams(window.location.search);
+                    if (dark.has("darkmode"))
+                    {
+                        document.body.style.background="black";
+                        var e = document.body;
+            e.classList.toggle("dark-mode");
+                    }
+                        console.log(dark);
+                
+            }
+            function about()
+{
+    if (document.body.classList.has("dark-mode"))
+    {
+          document.getElementById("about").setAttribute("href","about.html");
+    }
+}
+            </script>
+
         
-    </head>
-    <body>
-        <div class = >
-        <p class="header">Tamara Nastevska</p>
-        <button type="submit" class = "new"><i class="fa fa-search "></i></button>
+
+    <style>
+        a
+        {
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+    </head> 
+    <body >
+
+    <div id="dialog" title="Sign up here!">
+        <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com" >
+            <div style="background-color: wheat;" class="nova">
+                <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+                <p class="snask">Sign up with your email adress to receive news and updates</p>
+                <div class = "ssnask">
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                    <br><br></div>
+                <input class = "contac" type="submit" value="Subscribe">
+            </div>
+        </form>
+    </div>
+
+
+
+        <div> 
+        <p class="header"><a  href="proektna.html">Tamara Nastevska</a></p>
+        <button class = "new" onclick="myFunction()" ><span id = "myId"><i class="fa fa-moon-o "></i></span></button>
+        <button class = "neww" onclick="myFunction()"><span id = "myId"><i class="fa fa-sun-o "></i></span></button>
         <hr class="Rule"> 
+
         </div>
-        
+        <script>
+
+            function myFunction() {
+                if (document.body.style.background=="black")
+                {
+                    document.body.style.background="rgb(240, 235, 235)";
+                }
+                else
+                {
+                    document.body.style.background="black";
+                }
+            var e = document.body;
+
+            e.classList.toggle("dark-mode");
+            }
+         
+                                    
+    </script>
+       
         <div class = "menu">
             <ul>
-            <li><a href = "doma">Home</a></li>
-            <li><a href = "about">About me</a></li>
-            <li><a href = "gallery">Gallery</a></li>
-            <li><a href="reviews">Reviews</a></li>
-            <li><a href ="contact">Contact</a></li>
+            <li><a href = "proektna.html">HOME</a></li>
+            <li><a id="about" href="about.html"about()">ABOUT ME</a></li>
+            <li><a href = "gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">FORUM</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
         </ul>
         </div>
-
+        <hr class="Rule"> 
         <br>
         <div class = "container">
             <img src="nas.jpg" alt="naslovna slika" width="1000" height="300"> 
-            <div class = "center">About me<br><button type="ab">View more</button></div>
+            <div class = "center">About me<br><button><label><a href = "about.html">View more</a></label></button></div>
         </div> 
+        
         
 
         <br><fieldset>
@@ -37,51 +182,57 @@
         <div class = "column">
             <div class="polaroid">
             <img src = "slika1.jpg" style="width: 100%;">
-            <div class = "container"><p><br>Trendy nails this fall</p></div>
-        </div>
-     </div>
+            <div class= "container nesto"><p style="color:black;font-size: 20px"><br><a href="https://www.pinterest.com/DressTrendscom/nail-trends-2022/"><br>Trendy nails this fall</a></p></div>
+            </div></div>
             <div class = "column">
                 <div class="polaroid">
             <img src = "slika2.jpg" style="width: 100%;" >
-            <div class = "container"><p><br>Places to visit when in Malibu</p></div>
+            <div class = "container nesto"><p style="color:black;font-size: 20px"><br><a href="https://www.busytourist.com/things-to-do-in-malibu-ca/"><br>Places to visit when in Malibu</a></p></div>
         </div>
     </div>
         <div class = "column">
             <div class="polaroid">
             <img src = "slika3.jpg" style="width: 100%;">
-            <div class = "container"><p><br>Is coffee good for your brain?</p></div>
+            <div class = "container nesto"><p style="color:black; font-size: 20px"><br><a href="https://www.healthline.com/nutrition/top-13-evidence-based-health-benefits-of-coffee"><br>Is coffee healthy?</a></p></div>
         </div>
-    </div>
+        </div></div>
     </fieldset><br><hr>
-        
-       <section><br>
-        <div class="things3 left "> 
-        <div class="audio-player wrap">
-            <p>PLAY MY PLAYLIST</p> 
-            <!-- <img class="cover" src="music.jpg" alt=""> -->
-            <audio id="audio-player" src="media/demo.mp3" type="audio/mp3" controls="controls" ></audio>
-        </div>
-         <div class="food wrap">
-             <p>FOOD</p>
-         </div>
-         <div class="movie wrap">
-             <p>MOVIES</p>
-         </div>
-    </div> 
-        <br><div id="about" class="right">
-            <p>|| ABOUT ME ||</p>
-            <img src ="jas.jpg"><br><b>Tamara Nastevska</b>
+
+    <div>
+        <a href ="https://www.imdb.com/chart/top/"><marquee style = "font-family: masqualero,sans-serif;color: #ffbe90; text-align: left;float: left;display: block;margin-left: 130px;padding: 10px;background-color: white;font-size: 20px; width: 1000px;" behavior="scroll" directiom="right" ><link href ="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M">
+
+            TOP SONGS BY SPOTIFY... CLICK ME
+        </marquee> </a></div>
+
+   <br>
+<!--        <div class="things3 left "> -->
+<!--        <div class="audio-player wrap">-->
+
+<!--            <marquee  behavior="scroll" direction="left">PLAY MY FAVE RADIO STATION</marquee>-->
+<!--            <audio id="audio-player" src="https://live.kanal77.com.mk:8089/acc" type="audio/mp3" controls="controls" ></audio>-->
+<!--        </div></div>-->
+
+
+
+
+        <br><div id="about" class="right" style="float: right;margin-right: 130px;">
+            <p style ="font-family: masqualero; font-size: 20px;">|| ABOUT ME ||</p>
+            <img src ="jas.jpg"  style = "border-radius: 50%; width:200px;padding-top: 20px;"><br><b>Tamara Nastevska</b>
             <p>Hi,I'm Tamara and this is my blog. I hope to show you a little part of my life.</p>
             <br>
             <a href="https://www.facebook.com/tamara.nastevska/" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/nastevskat/" class="fa fa-instagram"></a>
             <a href="mailto:nastevskat@yahoo.com" class="fa fa-yahoo"></a>
 
-        </div> 
+        </div>
 
-       </section>
-       
+    <p style ="font-family: masqualero; font-size: 20px;margin-top: 40px;margin-left: 200px;">|| INSTAGRAM ||</p>
+    <div style="float:left">
 
+      <a href="https://www.instagram.com/nastevskat/" > <img src ="inst.jpg" style="display: block; float: left; width: 30%; display: inline-block;margin-top: -400px;margin-left: 130px;">
+      </a>
+
+    </div>
 
 
 

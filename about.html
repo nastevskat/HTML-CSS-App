@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf -8">
+        <title> Welcome!</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "about.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/musicplayer.js"></script>
+        <link rel = "icon" href ="favicon.ico" type = "image/x-icon">
+        <script>
+            $(document).ready(function() {
+            $('.image-frame').hover(function(){
+                $('.image-caption',this).slideToggle('slow');
+            }, function(){
+                $('.image-caption',this).slideToggle('slow');
+            });
+        });</script>
+    </head>
+    <body>
+        <div class = >
+        <p class="header"><a class = "he" href="proektna.html">Tamara Nastevska</a></p>
+        <button class = "new" onclick="myFunction()" ><span id = "myId"><i class="fa fa-moon-o "></i></span></button>
+        <button class = "neww" onclick="myFunction()"><span id = "myId"><i class="fa fa-sun-o "></i></span></button>
+        <hr class="Rule"> 
+
+                    <script>
+                            function myFunction() {
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                            }
+                         
+                                                    
+                    </script>
+        </div>
+        
+        <div class = "menu">
+            <ul>
+            <li><a href = "proektna.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT ME</a></li>
+            <li><a href = "gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">FORUM</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        <hr class="Rule">
+        <fieldset  style="float: left;  border: 6px solid black;  width: 50%; margin-left: 150px;  "><legend  style = "font-family: masqualero,sans-serif;  font-size: 50px; width:100%; left: 150px; text-align: center;">About me</legend>
+       <br> <div style = "float: left; margin-left: 65px; ">
+        <img class = "polaroid" src = "giphy.gif" style="width: 100%;">
+    </div>
+    <br>
+    <p class ="polaroid" style=" margin-left:63px; float: left; width: 80%; font-family: 'Leelawadee UI'; background-color: #c4c4c4;">My name is Tamara! Student at the Faculty of Electrical Engineering and IT. As you may have already guessed, blogging is my favourite pastime. With sharing some things that truly inspire me I'll be taking you through a whole journey! Let's be friends! :)</p>
+    </fieldset>
+
+
+
+     
+       <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com" >
+            <div style="background-color: wheat;" class ="sig">
+              <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+              <p class="snask">Sign up with your email adress to receive news and updates</p>
+              <div class = "ssnask">
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                <br><br></div>
+              <input class = "contac" type="submit" value="Subscribe">
+            </div>
+          </form>
+          <div id="about" class="right ">
+              <br>
+            <p style ="font-family: masqualero; font-size: 20px;">|| ABOUT ME ||</p>
+            <img src ="jas.jpg"style="border-radius: 50%; width:200px"><br><b style="font-family: masqualero; font-size: 20px;">Tamara Nastevska</b>
+            <p>Hi,I'm Tamara and this is my blog. I hope to show you a little part of my life.</p>
+            <br>
+            <a href="https://www.facebook.com/tamara.nastevska/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nastevskat/" class="fa fa-instagram"></a>
+            <a href="mailto:nastevskat@yahoo.com" class="fa fa-yahoo"></a>
+
+        </div>
+
+
+    <fieldset style="float: left;border: 6px solid black;  width: 50%; margin-left: 150px;"><legend style = " font-family: masqualero,sans-serif;  font-size: 50px; width:100%; left: 150px; text-align: center;">Favourites</legend>
+       <div style="margin-left: 30px"><p style = "font-family: masqualero,sans-serif;  color:white; padding:10px; background-color:black; font-size: 30px; width:100%; margin-left: -15px; text-align: center;">MOVIES</p>
+           <a  href = "https://www.imdb.com/title/tt1130884/"> <div class="image-frame">
+               <img class = " polaroid " style="width: 100%;  margin-left: 0px" src="shutterisland.jpg"/>
+               <div class="image-caption">
+                   <h2>Shutter Island [2010]</h2>
+               </div>
+           </div></a>
+               <a href = "https://www.imdb.com/title/tt2382320/"><div class="image-frame">
+                   <img class = " polaroid " style="width: 100% " src="notimetodie.jpg"/>
+                   <div class="image-caption">
+                       <h2>No Time To Die [2021] </h2>
+                   </div>
+               </div></a>
+                   <a href = "https://www.imdb.com/title/tt0414387/?ref_=hm_tpks_tt_i_5_pd_tp1_cp"><div class="image-frame">
+                       <img class = " polaroid " style="width: 100%" src="prideandpre.jpg"/>
+                       <div class="image-caption">
+                           <h2>Pride & Prejudice [2005] </h2>
+                       </div>
+                   </div></a>
+           <a href ="https://www.imdb.com/chart/top/"><marquee style = "font-family: masqualero,sans-serif;  color:wheat; padding:10px; background-color:black; font-size: 20px; width:100%; margin-left: -15px; text-align: center;" behavior="scroll" directiom="right" ><link href ="https://www.imdb.com/chart/top/"> Top 15 Movies: 	1. The Shawshank Redemption (1994) 	2. The Godfather (1972)	3. The Godfather: Part II (1974)
+               4. The Dark Knight (2008) 	5. 12 Angry Men (1957)  6. Schindler's List (1993)   7. The Lord of the Rings: The Return of the King (2003)
+               8. Spider-Man: No Way Home (2021)	9. Pulp Fiction (1994)	10. The Good, the Bad and the Ugly (1966)	11. The Lord of the Rings: The Fellowship of the Ring (2001)
+               12. Fight Club (1999)	13. Forrest Gump (1994)	14. Inception (2010) 	15. The Lord of the Rings: The Two Towers (2002)</marquee></a>
+       </div> <br>
+
+
+
+
+
+
+        <div><p style = "float:left; font-family: masqualero,sans-serif;  color:white; padding: 10px; background-color:black; font-size: 30px;
+        width:100%; left: 150px; text-align: center;">MUSIC</p>
+
+           <div style="display: inline-block;position: relative; margin-left:40px">
+               <marquee style="font-size: 20px;width: 160px; background-color: white;" behavior="scroll" direction="right">Purple Disco Machine, Sophie and the Giants - Hypnotized</marquee>
+            <br><img src ="cover1.jpg" style = "float: left; width:160px;  height:160px;  ">
+            <br><audio style= "height: 20px; position: relative; width:160px; display: block; margin-top: 150px;  " id="audio-player" src="1.mp3" type="audio/mp3" controls="controls" ></audio>
+</div>
+            <div style="display: inline-block; position: relative;margin-left:10px">
+           <br> <br><marquee style="font-size: 20px; width: 160px;  background-color:palevioletred;  " behavior="scroll" direction="right">Pascal Letoublon - Friendships ft. Leony</marquee>
+            <br><img src="cover2.jpg" style = "float: left; width:160px; height:160px;   ">
+            <br><audio style= "height: 20px; position: relative; width:160px; display: block; margin-top: 150px; " id="audio-playerr" src="2.mp3" type="audio/mp3" controls="controls" ></audio>
+            </div>
+
+            <div style="display: inline-block;position: relative;margin-left:10px">
+           <br> <br><marquee style="font-size: 20px; width: 160px; background-color: darkgrey;   " behavior="scroll" direction="right">KALEIDA - THINK </marquee>
+            <br><img src="cover3.jpg" style = "float: left; width:160px; height:160px;    ">
+            <br><audio style= "height: 20px; position: relative; width:160px;  display: block; margin-top: 150px; " id="audio-playerrr" src="3.mp3" type="audio/mp3" controls="controls" ></audio>
+            </div>
+        </div>
+
+
+        <div><p style = "float:left; font-family: masqualero,sans-serif;  color:white; padding: 10px; background-color:black; font-size: 30px;
+        width:100%; left: 150px; text-align: center;">RECIPES</p>
+            <div style="display: inline-block">
+                <img  class="polaroid" src = "oatmeal.jpg" style="width: 160px; height:160px; float: left">
+                <p class = "polaroid" style="float: right; background-color: white; width: 400px;height: 158px;margin-top: 0px;  text-align: center; "><br><strong style="font-size: 18px;">Basic oatmeal<br> Total time: 7 mins<br> Serves: 2<br><br>
+                    <a style="text-decoration: none; color: black" href = "https://www.cookinglight.com/recipes/basic-oatmeal-recipe">View more...</a></strong></p>
+            </div>
+            <div style="display: inline-block">
+                <img  class="polaroid" src = "sushi.jpg" style="width: 160px; height:160px; float: left">
+                <p class = "polaroid" style="float: right; background-color: white; width: 400px;height: 158px; margin-top: 0px; text-align: center; "><br><strong style="font-size: 18px;">Sushi<br> Total time: 40-50 mins<br> Serves: 2<br><br>
+                    <a style="text-decoration: none; color: black" href = "https://www.youtube.com/watch?v=joweUxpHaqc">View more...</a></strong></p>
+            </div>
+            <div style="display: inline-block">
+                <img  class="polaroid" src = "salad.jpg" style="width: 160px; height:160px; float: left">
+                <p class = "polaroid" style="float: right; background-color: white; width: 400px;height: 158px;margin-top: 0px;  text-align: center; "><br><strong style="font-size: 18px;">Salad with chickpeas<br> Total time: 25 mins<br> Serves: 3<br><br>
+                    <a style="text-decoration: none; color: black" href = "https://www.delish.com/cooking/recipe-ideas/a19885314/mediterranean-chickpea-salad-recipe/">View more...</a></strong></p>
+            </div>
+        </div>
+
+    </fieldset>
+
+
+
+        </body>

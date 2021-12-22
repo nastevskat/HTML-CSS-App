@@ -2,15 +2,17 @@
 
   margin-left:auto;
   margin-right:auto;
+  background:rgb(240, 235, 235);
+  
  }
  .header {
     font-family: 'Signika';
-    font-size: 4vw;
+    font-size: 3vw;
     left:20em;
     right: 20em;
     margin:0;
     position: static;
-    padding: 1em;
+    margin-bottom: 2vw;
     text-align: center; 
    
 }  
@@ -20,10 +22,41 @@
   }
 .new {
   position: absolute;
-  top: 185px;
-  right: 15em;
+  top: 50px;
+  right: 250px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
 
 }
+.dark-mode {
+  background-color: rgb(22, 22, 22);
+    color:white;
+}
+body.dark-mode a {
+  color: rgb(240, 235, 235);
+  background-color: rgb(22, 22, 22);
+}
+body.dark-mode label a {
+  background-color: white;
+  color: black;
+}
+
+ body .dark-mode div div p{
+     background-color: white;
+     color: black;
+ }
+
+ body .dark-mode fieldset div{
+     background-color: white;
+     color: black;
+
+ }
+ body .dark-mode fieldset div div div div p{
+
+     color:black;
+
+ }
 hr.Rule {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -31,32 +64,37 @@ hr.Rule {
  ul {
     
     list-style-type: none; 
-    background-color: rgba(255,255,255,.5);
+    /* background-color: rgba(255,255,255,.5); */
     top:15px;
     
-    left:20em;
-    right: 20em;
+    /* left:20em;
+    right: 20em; */
     margin:0;
+    text-align: center;
+    
+   
   }
 li{
-  display:inline;
+  display:inline-block;
 }
 li  {
     
     color: black;
-    padding-right: 36px;
+    padding-right: 15px;
     padding-left:2px;
     text-decoration: none;
-   
+    box-sizing: content-box;
 }
 
 li a{
   text-decoration: none;
   color: black;
   text-align: center;
+  position: relative;
 }
 li a:hover {
-    background-color: grey;
+    color: forestgreen;
+
 }
  .menu {
   
@@ -80,6 +118,8 @@ li a:hover {
     font-size: 28px;
     color: white;
   }
+
+  
   .container {
     margin-top: 10px;
     position: relative;
@@ -151,22 +191,22 @@ li a:hover {
 
   }
 .fa-facebook,.fa-instagram,.fa-yahoo{ 
-    padding: 20px; 
+    padding: 0px; 
     font-size: 1px;
     width: 50px;
     text-align: center;
     text-decoration: none;
   }
   .fa-facebook {
-    background: rgba(255,255,255,.5);
+    /* background: rgba(255,255,255,.5); */
     color: black;
   }
   .fa-instagram{
-    background:rgba(255,255,255,.5);
+    /* background:rgba(255,255,255,.5); */
     color: black;
   }
   .fa-yahoo{
-    background:rgba(255,255,255,.5);
+    /* background:rgba(255,255,255,.5); */
     color: black; 
    }
   .right{
@@ -179,3 +219,120 @@ li a:hover {
     height:300px;
     text-align:left; 
   }
+  .fa-moon-o {
+    background:transparent;
+    color: rgb(22, 22, 22);
+   }
+   .fa-sun-o{
+     background: transparent;
+     color: rgb(240, 235, 235);
+     
+   }
+   .neww {
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+  
+  
+   }
+   .he {
+    font-family: 'Signika';
+    font-size: 3vw;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+   }
+
+.cont{
+  font-size: 52px;
+  font-family: masqualero;
+  text-align: left;
+  padding-left: 160px;
+  
+}
+.contact {
+  font-size: 30px;
+  font-family: masqualero;
+}
+.contac {
+  color:rgb(240, 235, 235);
+  background-color: rgb(22, 22, 22);
+  border: 0;
+  font-size: 16px;
+  padding: 10px;
+  
+  
+}
+.contac :hover {
+  background-color:#c4c4c4;
+  color: rgb(22, 22, 22);
+  transition: all .5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  
+}
+.kontakt {
+  text-align:left ;
+  display: block;
+  padding-left: 120px;
+  padding-top: 20px;
+  float: left;
+  
+
+}
+.zvez{
+  color:limegreen;
+}
+
+.sig{
+  float:right;
+  display:block;
+  text-align: center;
+  margin-top: 100px;
+  box-sizing: border-box;
+  
+}
+
+.nask{
+  font-size: 50px;
+  font-family: masqualero;
+  display: block;
+  word-wrap: break-word;
+  width: 350px;
+ 
+  
+}
+
+.snask{
+  font-size: 20px;
+  font-family: masqualero;
+  display: block;
+  word-wrap: break-word;
+  width:350px;
+  text-align: center;
+  
+}
+
+.searc{
+  font-size: 20px;
+  font-family: masqualero;
+  display: block;
+  width:350px;
+  float: right;
+  margin-top: 150px;
+  margin-right: 35px;
+}
+
+.ab{
+border-radius: 50%;
+background-color: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width: 70%;
+
+}
+/*  */
+

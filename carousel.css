@@ -1,0 +1,76 @@
+ #inner
+{
+    display:inline-block;
+}
+#inner img
+{
+    display:inline-block;
+    width:250px;
+    height:300px;
+}
+#divnext {
+    display: inline-block;
+}
+#divprev
+{
+
+    display:contents;
+
+}
+#divprev, #divnext
+{ text-align: center;
+    height:500px;
+vertical-align: top;
+    width:115px;
+}
+#prev,#next
+{
+    float:none;
+    margin: auto;
+    width:50px;
+    height: 50px;
+    margin-top:125px;
+}
+#prev
+{
+    background-image: url("prev.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+
+}
+#next
+{
+    background-image: url("next.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+#prev,#next
+{ float:none;
+    vertical-align:middle;
+}
+#outtercarousel
+{
+    float:left;
+    width:500px;
+    height:300px;
+    display:inline-flex;
+}
+#likeimg
+{
+    /*margin-top: 530px;*/
+    /*margin-left: 20px;*/
+    width:30px;
+    height:30px;
+
+}
+.slik{
+    height: 30px;
+    width: 30px;
+}
+ .slikk{
+     height: 20px;
+     width: 20px;
+ }
+ #allcoms{
+     margin-top: 170px;  text-align: left; display: inline; margin-top: 30px
+ }

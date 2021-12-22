@@ -1,0 +1,29 @@
+a img:hover {
+    opacity: 0.3;
+}
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+a img:hover .middle {
+    opacity: 1;
+}
+
+.image-frame {
+    float: left;
+    position: relative;
+    margin: 5px;
+    color: #333;
+}
+.image-frame .image-caption {
+    display: none;
+    opacity: 0.8;
+    background: wheat;
+    width: 169px;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+}

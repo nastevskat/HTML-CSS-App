@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf -8">
+        <title> Welcome!</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="reviews.js"></script>
+        <link rel="stylesheet" href="reviews.css">
+        <link rel = "icon" href ="favicon.ico" type = "image/x-icon">
+<style>
+    .blogSliki
+    {
+        width:50px;
+        height:50px;
+    }
+    .fixed
+    {
+        background:white;
+        float:left;
+        display:block;
+        padding:0;
+        width: 450px;
+        margin-top: 50px;
+     
+    }
+</style>
+
+         <script>
+            $(document).ready(function() {
+                $("#date").datepicker({ dateFormat: 'dd-mm-yy' }).val();
+            });
+        </script>
+        <style>
+            #more {display: none;}
+        </style>
+
+    </head>
+    <body>
+        <div class = >
+        <p class="header"><a class = "he" href="proektna.html">Tamara Nastevska</a></p>
+        <button class = "new" onclick="myFunction()" ><span id = "myId"><i class="fa fa-moon-o "></i></span></button>
+        <button class = "neww" onclick="myFunction()"><span id = "myId"><i class="fa fa-sun-o "></i></span></button>
+        <hr class="Rule"> 
+
+                    <script>
+                            function myFunction() {
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                            }
+
+                         
+                                                    
+                    </script>
+        </div>
+        
+        <div class = "menu">
+            <ul>
+            <li><a href = "proektna.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT ME</a></li>
+            <li><a href = "gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">FORUM</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        <hr class="Rule">
+
+
+
+
+
+        <fieldset style="  display: inline-block;float: left; border: 6px solid darkolivegreen; margin-left: 150px; width: 500px; margin-top: 60px; height:auto;">
+    <legend  style = "font-family: masqualero,sans-serif;  font-size: 50px; width:100%; left: 150px; text-align: center;">Blog</legend>
+    <h1 >Write a post    </h1> <div style="background-color: white; width: 450px; height: 450px" class="polaroid">
+    <br>    <label for="name"><img src="user.jpg" style="float:left; width: 45px; height: 45px; display: inline-block;"> </label><input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="Enter your name" type = "text" name = "ime" id="name" required>
+    <br> <br>   <label for="naslov"><img src="naslov.gif" style="width: 45px; height: 45px; display: inline-block;"> </label><input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="Enter your post title" type = "text" name = "title" id="naslov" required>
+    <br> <br>   <label for="sodrzina"><img src="text-icon.png" style="width: 45px; height: 45px; display: inline-block;"> </label><input style="height: 145px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="Enter your story"type = "text" name = "content" id="sodrzina" required>
+    <br> <br>   <label for="date"><img src="calen.jpg" style="float:left; width: 50px; height: 50px; display: inline-block;"> </label><input style="height: 45px; width: 100px; font-size: 15px; border-width: 5px; " type ="text" name = "data" id="date">
+    <br> <br>   <button class = "contac" id="submit" type="submit" onclick="submitPost()" style="margin-left: 50px;">Post</button>
+
+        <div id="allp"> </div>
+        </div>
+
+        </fieldset>
+
+
+
+        <script>
+            function viewMore(){
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if(dots.style.display == "none"){
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display ="none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+
+        <div style = "float: right">
+        <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com">
+            <div style="background-color: wheat;" class ="sig">
+                <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+                <p class="snask">Sign up with your email adress to receive news and updates</p>
+                <div class = "ssnask">
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                    <br><br></div>
+                <input class = "contac" type="submit" value="Subscribe" >
+            </div>
+        </form>
+        <div id="about" class="right ">
+            <br>
+            <p style ="font-family: masqualero; font-size: 20px;">|| ABOUT ME ||</p>
+            <img src ="jas.jpg"style="margin-left: 38px;border-radius: 50%; width:200px"><br><b style="display: inline-block; font-family: masqualero; font-size: 20px;">Tamara Nastevska</b>
+            <p>Hi,I'm Tamara and this is my blog. I hope to show you a little part of my life.</p>
+            <br>
+            <a href="https://www.facebook.com/tamara.nastevska/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nastevskat/" class="fa fa-instagram"></a>
+            <a href="mailto:nastevskat@yahoo.com" class="fa fa-yahoo"></a>
+
+        </div> </div>
+
+
+    </body>

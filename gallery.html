@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset = "utf -8">
+        <title> Welcome!</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="carousel.js"></script>
+        <link rel="stylesheet" href="carousel.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <link rel = "icon" href ="favicon.ico" type = "image/x-icon">
+        <script>$(document).ready( function() {
+        $( "#dialog" ).dialog(
+            {
+                modal:true,
+                height:660,
+                width:500,
+                resizable: false,
+                show: {
+                    effect: "fade",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "fade",
+                    duration: 500
+                },
+                open: function () {
+                    var e = document.body.children;
+                    for(var i=0;i<e.length;i++)
+                    {
+                        e[i].classList.add("blackout");
+                    }
+                    console.log("raboti");
+                    callf();
+document.body.style.background="dimgrey";
+                },
+            close:function()
+            {
+                var e = document.body.children;
+                for(var i=0;i<e.length;i++)
+                {
+                    e[i].classList.remove("blackout");
+                }
+
+document.body.style.background="rgb(240, 235, 235)";
+
+            }
+            }
+        );
+        } );
+            function callf()
+            {
+                document.getElementById("dialog").classList.add("dialogg");
+            }
+            </script>
+        <style>
+            .blackout{background: dimgrey;
+                opacity: 0.3;
+            }
+.ui-dialog
+{
+    opacity:1;
+}
+            .ui-dialog.ui-widget.ui-widget-content {
+                background:wheat;
+            opacity:1;
+            }
+
+            .ui-widget-overlay.ui-front {
+                opacity:0.75;
+            }
+            .nova{
+                float:right;
+                display:block;
+                text-align: center;
+                margin-top: 10px;
+                box-sizing: border-box;
+
+            }
+        </style>
+
+    </head>
+    <body>
+    <div id="dialog" title="Sign up here!">
+        <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com" >
+            <div style="background-color: wheat;" class="nova">
+                <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+                <p class="snask">Sign up with your email adress to receive news and updates</p>
+                <div class = "ssnask">
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+                    <br><br>
+                    <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                    <br><br></div>
+                <input class = "contac" type="submit" value="Subscribe">
+            </div>
+        </form>
+    </div>
+        <div class = >
+        <p class="header"><a class = "he" href="proektna.html">Tamara Nastevska</a></p>
+        <button class = "new" onclick="myFunction()" ><span id = "myId"><i class="fa fa-moon-o "></i></span></button>
+        <button class = "neww" onclick="myFunction()"><span id = "myyId"><i class="fa fa-sun-o "></i></span></button>
+        <hr class="Rule"> 
+
+                    <script>
+                            function myFunction() {
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                            }
+                         
+                                                    
+                    </script>
+        </div>
+        
+        <div class = "menu">
+            <ul>
+            <li><a href = "proektna.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT ME</a></li>
+            <li><a href = "gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">FORUM</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        <hr class="Rule">
+<fieldset style="display: inline-block; float: left">
+        <div id="lc" style = " display: grid; margin-left: -100px">
+
+  <div id="outtercarousel"  >
+
+      <div id="divprev">
+      <img  id="prev" src="prev.png"onclick="prev()" style ="margin-top: 260px; margin-left: 160px; "></img>
+  </div>
+
+<div id="inner">
+  <img src="1.jpg" id="1" style ="width: 500px;
+    height: 600px; margin-top:70px;  margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+  <img src="2.jpg" id="2" style ="width: 500px;
+    height: 600px; margin-top:70px; margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+  <img src="3.jpg" id="3" style ="width: 500px;
+    height: 600px; margin-top:70px; margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+  <img src="4.jpg" id="4"style ="width: 500px;
+    height: 600px; margin-top:70px; margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+  <img src="5.jpg" id="5"style ="width: 500px;
+    height: 600px; margin-top:70px; margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+  <img src="6.jpg" id="6" style ="width: 500px;
+    height: 600px; margin-top:70px; margin-left: 7px; padding-bottom: 100px;" class = "polaroid ">
+</div>
+
+      <div id="divnext">
+      <img  src="next.png" id="next"  onclick="next()" style ="margin-top: 260px; margin-left: 7px; "></img>
+      </div>
+
+</div>
+
+
+
+            <div id="likes" style = "  margin-right:200px;  display:inline-block; ">
+                <span  id="number" style="    margin-left: 260px; z-index: 30; position: absolute; font-weight: 600; margin-top: 300px;"></span>
+<img  id="likeimg" src="heart.png" onclick="like()" style=" margin-left: 230px; width: 20px; height: 20px;z-index: 10; position: relative; margin-top: 300px;" >
+                <span id="error" style="font-weight: bold;  margin-left: 0px; z-index: 22; position: absolute; margin-top: 330px; ">Already liked image!</span>
+            </div>
+
+            <div id="comments" class="polaroid" style=" background-color:white; margin-left: 217px; margin-top: 60px; display: inline-block; width: 500px;" >
+                <label for="name"><br></br><img src="user.jpg" style="width:30px; height: 30px"></label>
+                &nbsp; <input type="text" id="name" style="height: 35px; width:250px; border-width: 3px; border-bottom-color: wheat; border-right-color: wheat; border-top-color: burlywood;
+border-left-color: burlywood;" placeholder="Enter your name" required >
+                <br>
+                <label for="comm" ><br><img src="comm.jpg" style="width:25px; height: 20px; margin-top: 20px; margin-left: 2px"></label>
+                &nbsp; <input type="text" id="comm" style="height: 70px; width:250px; border-width: 3px; border-bottom-color: wheat; border-right-color: wheat; border-top-color: burlywood;
+                border-left-color: burlywood;" placeholder="Leave your comment" required >
+
+                <br><br>
+                <button class="contac" style = "margin-left: 50px" onclick="submitcom()">Add comment</button>
+                <br>
+
+                <div id="allcoms"  >
+
+                </div>
+
+            </div>
+
+        </div>
+</fieldset>
+
+        <form method="post" style="background-color: white; text-align: right; padding-right: 50px;" action="mailto:nastevskat@yahoo.com">
+            <div style="background-color: wheat;" class ="sig">
+              <h2 class = "nask">Sign up so you <span style = "font-style: italic;">don't</span> miss out! </h2>
+              <p class="snask">Sign up with your email adress to receive news and updates</p>
+              <div class = "ssnask">
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px; "type="text" placeholder="First name" name="name" required >
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;" type="text" placeholder="Last name" name="lastname" required>
+              <br><br>
+              <input style="height: 45px; width: 300px; font-size: 15px; border-width: 5px;"type="text" placeholder="Email address" name="mail" required>
+                <br><br></div>
+              <input class = "contac" type="submit" value="Subscribe">
+            </div>
+          </form>
+            <br>
+          <div id="about" class="right " style ="margin-left:1500px; margin-top: -350px">
+              <br>
+            <p style ="font-family: masqualero; font-size: 20px;">|| ABOUT ME ||</p>
+            <img src ="jas.jpg"style="border-radius: 50%; width:200px"><br><b style="font-family: masqualero; font-size: 20px;">Tamara Nastevska</b>
+            <p>Hi,I'm Tamara and this is my blog. I hope to show you a little part of my life.</p>
+            <br>
+            <a href="https://www.facebook.com/tamara.nastevska/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nastevskat/" class="fa fa-instagram"></a>
+            <a href="mailto:nastevskat@yahoo.com" class="fa fa-yahoo"></a>
+
+        </div> 
+ 
+
+</body>
