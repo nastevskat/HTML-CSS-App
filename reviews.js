@@ -5,7 +5,7 @@ window.onload = (event) => {
 function submitPost()
 {
     var cela=[];
-    if (typeof(localStorage.getItem("blog"))!='undefined')
+    if (localStorage.getItem("blog")!=null)
     {
         cela=JSON.parse(window.localStorage.getItem("blog"));
         console.log(cela);
